@@ -11,10 +11,8 @@ from . import LITECODER_ENV, DATA_DIR
 
 def connect_db(db_path):
     """Get database connection.
-
     Args:
         db_path (str)
-
     Returns: engine, session
     """
     url = URL(drivername='sqlite', database=db_path)

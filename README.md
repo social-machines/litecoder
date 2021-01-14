@@ -31,6 +31,23 @@ For now, Litecoder only supports US cities and states.
 - Locations more granular than cities / towns - major parks, venues, etc.
 - International cities + countries.
 
+## Installation
+
+If you would like to install the development version, please run the following commands:
+
+```
+sudo apt-get install graphviz libgraphviz-dev pkg-config
+git clone https://github.com/social-machines/litecoder.git
+cd litecoder
+pipenv install
+```
+
+Otherwise, you can download `litecoder` using `pip`
+
+```
+pip install litecoder
+```
+
 ## Examples
 
 ### US cities

@@ -4,7 +4,7 @@ import yaml
 import pkgutil
 import us
 
-import numpy as np
+import statistics
 
 from tqdm import tqdm
 from collections import defaultdict
@@ -207,7 +207,7 @@ class WOFLocality(BaseModel):
         """Get median population.
         """
         pops = [c.population for c in cls.query if c.population]
-        return np.median(pops)
+        return statistics.median(pops)
 
     def __repr__(self):
         return '%s<%s, %s, %s, wof:%d>' % (

@@ -10,6 +10,9 @@ INSTALL_REQUIRES = [
     "download",
     "PyYAML",
     "us",
+    "boltons",
+    "attrs",
+    "scipy"
 ]
 
 CLASSIFIERS = [
